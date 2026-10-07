@@ -1,0 +1,31 @@
+ Iterative Rendering using map()
+AIM
+To write a React program to implement iterative rendering using the map() function.
+PROGRAM (App.jsx)
+function App() {
+ const fruits = ["Apple", "Banana", "Mango", "Orange"];
+ return (
+ <ul>
+ {fruits.map((fruit, index) => (
+ <li key={index}>{fruit}</li>
+ ))}
+ </ul>
+ );
+}
+export default App;
+OUTPUT
+● ● ● localhost:5173
+• Apple
+• Banana
+• Mango
+• Orange
+Output in browser
+HOW map() WORKS
+["Apple", "Banana", "Mango",
+"Orange"] → map() → 4 x <li> items on page
+KEY POINTS
+• map() goes through the list one item at a time.
+• For each fruit, it creates one <li> — so 4 fruits = 4 list items.
+• key gives each item a unique id (React shows a warning without it).
+RESULT
+All five React programs were written and executed successfully, and the outputs were verified in the
